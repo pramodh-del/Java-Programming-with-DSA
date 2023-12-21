@@ -1,16 +1,16 @@
+//Take integer inputs till the user enters 0 and print the largest number from all.
+
 import java.util.Scanner;
+
 public class Largest {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.println("enter first number");
-        int num1=sc.nextInt();
-        System.out.println("enter second number");
-        int num2=sc.nextInt();
-        if(num1>num2){
-            System.out.println("largest number is "+num1);
-        }
-        else if(num2>num1) {
-            System.out.println("num2 is biggest "+num2);
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+
+        int large=x;
+        if (y>x){
+            System.out.println("y is greater");
         }
     }
 }
