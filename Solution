@@ -1,0 +1,29 @@
+class Solution {
+    public List<List<Integer>> generate(int numRows) 
+    {
+        List<List<Integer>> triangle = new ArrayList<>();
+
+        // Create the first row with a single 1
+        triangle.add(new ArrayList<>(List.of(1)));
+
+        for (int i = 1; i < numRows; i++) {
+            List<Integer> currentRow = new ArrayList<>();
+
+            // Add 1 at the beginning of the row
+            currentRow.add(1);
+
+            // Calculate the middle elements using the previous row
+            for (int j = 1; j < i; j++) {
+                currentRow.add(triangle.get(i - 1).get(j - 1) + triangle.get(i - 1).get(j));
+            }
+
+            // Add 1 at the end of the row
+            currentRow.add(1);
+
+            triangle.add(currentRow);
+        }
+
+        return triangle;
+        
+    }
+}
