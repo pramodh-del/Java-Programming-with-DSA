@@ -14,5 +14,5 @@ public class SimpleBanking {
         int newBalance=balance-withdrewamount;
         return newBalance;
     }
-    static int ShowBalance()
+
 }
