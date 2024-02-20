@@ -20,8 +20,6 @@ public class Substring {
             }
 
         }
-        str1.toUpperCase()
         return -1;
-        Arrays.toString()
     }
 }
