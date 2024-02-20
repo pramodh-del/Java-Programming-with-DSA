@@ -6,9 +6,9 @@ public class removespaces {
     }
     static String removespaces(String str){
         StringBuilder sc=new StringBuilder();
-        for(char c:str.toCharArray()){
-            if (!Character.isWhitespace(c)){
-                sc.append(c);
+        for (char ch:str.toCharArray()){
+            if (!Character.isWhitespace(ch)){
+                sc.append(ch);
             }
         }
         String ans=sc.toString();
