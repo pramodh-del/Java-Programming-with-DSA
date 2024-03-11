@@ -3,6 +3,7 @@ public class Solution {
         int[] arr={1,2,3,4,5};
         int target=5;
         nums(5);
+        System.out.println(bs(arr,0,arr.length,target));
     }
     static int bs(int[] arr,int s ,int e,int target){
         if (s>e){
